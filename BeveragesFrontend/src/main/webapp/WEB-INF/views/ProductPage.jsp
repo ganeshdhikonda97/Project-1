@@ -16,6 +16,7 @@
 					<img class="img-responsive center-block" src="<c:url value="/resources/img/${selectedProduct.id}.jpg" />" alt="${selectedProduct.name}" />
 				</div>
 				<div class="col-md-5 col-xs-7">
+				
 					<div class="h2">${selectedProduct.name}</div>
 					<div class="h3"><b>Product description:</b> ${selectedProduct.description}</div>
 					<div class="h4"><b>Product category:</b> ${selectedProduct.category_id}</div>

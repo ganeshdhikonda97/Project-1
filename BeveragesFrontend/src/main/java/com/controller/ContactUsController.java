@@ -37,7 +37,7 @@ public class ContactUsController {
 		
 		contact.setName(name);
 		contact.setEmail(email);
-		contact.setContact(mobile);
+		contact.setMobile(mobile);
 		contact.setMessage(message);
 		
 		if(contactDAO.save(contact)==true){

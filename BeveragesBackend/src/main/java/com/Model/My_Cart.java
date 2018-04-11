@@ -16,7 +16,7 @@ public class My_Cart {
 	
 	@Id
 	@GeneratedValue
-	private int id;
+	
 	private String user_id;
 	private String product_name;
 	private double price;
@@ -25,12 +25,7 @@ public class My_Cart {
 	private String status;
 
 	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
+	
 	public String getUser_id() {
 		return user_id;
 	}
