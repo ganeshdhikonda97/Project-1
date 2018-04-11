@@ -11,8 +11,19 @@ import org.springframework.stereotype.Component;
 public class Contact {
 	@Id
 	@GeneratedValue
+	private String id;
+
 	private String name;
-	private String mobile;
+	private String contact;
+
+	public String getContact() {
+		return contact;
+	}
+
+	public void setContact(String contact) {
+		this.contact = contact;
+	}
+
 	private String email;
 	private String message;
 
@@ -24,14 +35,12 @@ public class Contact {
 		this.name = name;
 	}
 
-	
-
-	public String getMobile() {
-		return mobile;
+	public String getId() {
+		return id;
 	}
 
-	public void setMobile(String mobile) {
-		this.mobile = mobile;
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public String getEmail() {
