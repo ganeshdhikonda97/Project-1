@@ -17,7 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import com.Model.Address;
 import com.Model.Category;
 import com.Model.Contact;
-import com.Model.My_Cart;
+import com.Model.Cart;
 import com.Model.Product;
 import com.Model.Supplier;
 import com.Model.User;
@@ -61,7 +61,7 @@ public class HiberConfig {
 		sessionBuilder.addAnnotatedClass(Supplier.class);
 		sessionBuilder.addAnnotatedClass(Address.class);
 		sessionBuilder.addAnnotatedClass(Product.class);
-		sessionBuilder.addAnnotatedClass(My_Cart.class);
+		sessionBuilder.addAnnotatedClass(Cart.class);
 		sessionBuilder.addAnnotatedClass(Contact.class);
 		sessionBuilder.scanPackages("com");
 

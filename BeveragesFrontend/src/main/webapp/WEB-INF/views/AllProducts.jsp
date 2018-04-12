@@ -35,7 +35,7 @@
 								<div>
 									
 									<c:if test="${isUserLoggedIn=='true'}">
-										<a href="myCart-add/${product.id}" class="btn btn-success">
+										<a href="cart/add/" class="btn btn-success">
 											Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i>
 										</a>
 									</c:if>

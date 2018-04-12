@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.Dao.CategoryDAO;
-import com.Dao.My_CartDAO;
+import com.Dao.CartDAO;
 import com.Dao.ProductDAO;
 import com.Dao.SupplierDAO;
 import com.Dao.UserDAO;
 import com.Model.Category;
-import com.Model.My_Cart;
+import com.Model.Cart;
 import com.Model.Product;
 import com.Model.Supplier;
 import com.Model.User;
@@ -57,10 +57,10 @@ public class HomeController {
 	UserDAO userDAO;
 
 	@Autowired
-	My_Cart myCart;
+	Cart myCart;
 
 	@Autowired
-	My_CartDAO myCartDAO;
+	CartDAO myCartDAO;
 
 	@RequestMapping("/")
 	public ModelAndView goToHome() {
